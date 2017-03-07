@@ -92,7 +92,7 @@
          "apiVersion": "v1",
          "metadata": {
             "name": "nexus3",
-            "namespace": "cicd"
+            "namespace": "ci"
          },
          "spec": {
             "dockerImageRepository": "",
