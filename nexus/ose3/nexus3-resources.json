@@ -10,7 +10,7 @@
          "apiVersion": "v1",
          "metadata": {
             "name": "nexus",
-            "namespace": "ci"
+            "namespace": "nexus"
          }
       },
       {
@@ -18,7 +18,7 @@
          "apiVersion": "v1",
          "metadata": {
             "name": "nexus3",
-            "namespace": "ci"
+            "namespace": "nexus"
          },
          "spec": {
             "triggers": [
@@ -63,7 +63,7 @@
                "to": {
                   "kind": "ImageStreamTag",
                   "name": "nexus3:latest",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                }
             },
             "resources": {}
@@ -92,7 +92,7 @@
          "apiVersion": "v1",
          "metadata": {
             "name": "nexus3",
-            "namespace": "ci"
+            "namespace": "nexus"
          },
          "spec": {
             "dockerImageRepository": "",
@@ -108,7 +108,7 @@
          "apiVersion": "v1",
          "metadata": {
             "name": "nexus3-ephemeral",
-            "namespace": "ci",
+            "namespace": "nexus",
             "annotations": {
                "description": "Nexusx3 service, with ephemeral storage. Scaling to more than one replica is not supported",
                "tags": "repository-managers,nexus3"
@@ -149,7 +149,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "strategy": {
@@ -188,7 +188,7 @@
                            "from": {
                               "kind": "ImageStreamTag",
                               "name": "${IMAGE_NAME}:${IMAGE_TAG}",
-                              "namespace": "ci"
+                              "namespace": "nexus"
                            }
                         }
                      }
@@ -276,7 +276,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "host": "${APPLICATION_HOSTNAME}",
@@ -291,7 +291,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "ports": [
@@ -315,7 +315,7 @@
          "apiVersion": "v1",
          "metadata": {
             "name": "nexus3-persistent",
-            "namespace": "ci",
+            "namespace": "nexus",
             "annotations": {
                "description": "Nexus3 service, with persistent storage. Scaling to more than one replica is not supported",
                "tags": "repository-managers,nexus3"
@@ -362,7 +362,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3-claim",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "accessModes": [
@@ -381,7 +381,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "strategy": {
@@ -419,7 +419,7 @@
                            "from": {
                               "kind": "ImageStreamTag",
                               "name": "${IMAGE_NAME}:${IMAGE_TAG}",
-                              "namespace": "ci"
+                              "namespace": "nexus"
                            }
                         }
                      }
@@ -507,7 +507,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "host": "${APPLICATION_HOSTNAME}",
@@ -522,7 +522,7 @@
                "apiVersion": "v1",
                "metadata": {
                   "name": "nexus3",
-                  "namespace": "ci"
+                  "namespace": "nexus"
                },
                "spec": {
                   "ports": [
